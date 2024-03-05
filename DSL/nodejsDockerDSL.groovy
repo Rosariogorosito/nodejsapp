@@ -17,7 +17,7 @@ job('Aplicacion Node.js DSL') {
         dockerBuildAndPublish {
             repositoryName('Rosariogorosito/nodejsapp')
             tag('${GIT_REVISION,length=7}')
-            registryCredentials('El ID con el que hayan guardado la credencial de su cuenta de docker en jenkins')
+            registryCredentials('docker-hub')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
